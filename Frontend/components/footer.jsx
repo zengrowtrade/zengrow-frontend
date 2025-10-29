@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import Image from "next/image"
 export function Footer() {
   return (
     <footer className="border-t bg-muted/30">
@@ -7,9 +7,15 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">Z</span>
-              </div>
+              <div className="w-8 h-8  flex items-center justify-center overflow-hidden">
+              <Image 
+                src="/logo/box_image.svg" 
+                alt="ZenGrow Trade" 
+                width={32} 
+                height={32} 
+                className="object-contain" 
+              />
+            </div>
               <span className="font-bold text-lg">ZenGrow Trade</span>
             </div>
             <p className="text-sm text-muted-foreground">

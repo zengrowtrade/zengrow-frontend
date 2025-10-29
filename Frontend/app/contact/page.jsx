@@ -26,7 +26,7 @@ export default function ContactPage() {
               <h3 className="font-semibold mb-2">Email Us</h3>
               <p className="text-sm text-muted-foreground mb-4">Get a response within 24 hours</p>
               <Button variant="outline" size="sm" asChild>
-                <a href="mailto:info@zengrowtrade.com">info@zengrowtrade.com</a>
+                <a href="mailto:info@zengrowtrade.com">deepanshukapoor@zengrowtrade.com</a>
               </Button>
             </Card>
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
               <h3 className="font-semibold mb-2">WhatsApp</h3>
               <p className="text-sm text-muted-foreground mb-4">Chat with us instantly</p>
               <Button variant="outline" size="sm" asChild>
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/12048697337" target="_blank" rel="noopener noreferrer">
                   Start Chat
                 </a>
               </Button>
