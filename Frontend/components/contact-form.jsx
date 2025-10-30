@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Loader2 } from "lucide-react"
-
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000"
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -33,7 +33,7 @@ export function ContactForm() {
 
     try {
       // First create the contact user
-      const userResponse = await fetch('http://localhost:8000/api/contact-users/', {
+      const userResponse = await fetch((`${API_BASE}/api/contact-users/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ export function ContactForm() {
         const userData = await userResponse.json()
         
         // Then create the inquiry
-        const inquiryResponse = await fetch('http://localhost:8000/api/inquiries/', {
+        const inquiryResponse = await fetch((`${API_BASE}/api/contact-users/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

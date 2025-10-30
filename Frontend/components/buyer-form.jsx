@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Loader2 } from "lucide-react"
-
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:8000"
 export function BuyerForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -24,7 +24,7 @@ export function BuyerForm() {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/countries/django_countries/')
+        const response = await fetch(`${API_BASE}/api/countries/django_countries/`)
         if (response.ok) {
           const countriesData = await response.json()
           setCountries(countriesData)
@@ -59,7 +59,7 @@ export function BuyerForm() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('http://localhost:8000/api/buyers/', {
+      const response = await fetch(`${API_BASE}/api/buyers/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
