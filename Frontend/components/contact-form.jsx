@@ -33,7 +33,7 @@ export function ContactForm() {
 
     try {
       // First create the contact user
-      const userResponse = await fetch((`${API_BASE}/api/contact-users/`, {
+      const userResponse = await fetch(`${API_BASE}/api/contact-users/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
