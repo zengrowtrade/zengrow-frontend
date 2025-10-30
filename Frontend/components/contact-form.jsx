@@ -50,7 +50,7 @@ export function ContactForm() {
         const userData = await userResponse.json()
         
         // Then create the inquiry
-        const inquiryResponse = await fetch((`${API_BASE}/api/contact-users/`, {
+        const inquiryResponse = await fetch(`${API_BASE}/api/contact-users/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
