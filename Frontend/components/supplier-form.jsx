@@ -25,7 +25,7 @@ export function SupplierForm() {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await fetch(`${API_BASE}/api/countries/django_countries/`)
+        const response = await fetch(`${API_BASE}/api/countries/`)
         if (response.ok) {
           const countriesData = await response.json()
           setCountries(countriesData)
