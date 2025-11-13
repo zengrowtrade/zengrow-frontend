@@ -40,7 +40,7 @@ export function Header() {
               For Buyers
             </Link>
             <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
-              Contact
+              Get Verify
             </Link>
           </nav>
 
@@ -89,12 +89,13 @@ export function Header() {
               >
                 For Buyers
               </Link>
+              {/* Find Verify */}
               <Link
                 href="/contact"
                 className="text-sm font-medium hover:text-primary transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact
+                Get Verify
               </Link>
               <div className="flex flex-col gap-2 pt-2">
                 <Button variant="outline" asChild>

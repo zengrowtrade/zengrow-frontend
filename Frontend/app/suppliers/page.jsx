@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Find Verified Global Buyers for Canadian Exports | ZenGrow Trade Ltd.",
+  description:
+    "Export from Canada with confidence. ZenGrow connects Canadian suppliers with verified international buyers and supports documentation, compliance, and logistics.",
+  alternates: {
+    canonical: "https://zengrowtrade.com/suppliers",
+  },
+}
 import { Header } from "../../components/header"
 import { Footer } from "../../components/footer"
 import { SupplierForm } from "../../components/supplier-form"

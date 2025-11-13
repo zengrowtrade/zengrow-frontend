@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Contact ZenGrow Trade Ltd. | Start Your Trade Project",
+  description:
+    "Contact ZenGrow Trade Ltd. by email or WhatsApp to start your import or export project. Connect with verified buyers and suppliers.",
+  alternates: {
+    canonical: "https://zengrowtrade.com/contact",
+  },
+}
 import { Header } from "../../components//header"
 import { Footer } from "../../components/footer"
 import { ContactForm } from "../../components/contact-form"

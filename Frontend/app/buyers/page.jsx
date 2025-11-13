@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Find Verified Canadian Suppliers | ZenGrow Trade Ltd.",
+  description:
+    "Find verified Canadian suppliers for maple syrup, agricultural products, metals and more. ZenGrow helps importers source authentic Canadian products with secure, managed trade.",
+  alternates: {
+    canonical: "https://zengrowtrade.com/buyers",
+  },
+}
 import { Header } from "../../components/header"
 import { Footer } from "../../components/footer"
 import { BuyerForm } from "../../components/buyer-form"

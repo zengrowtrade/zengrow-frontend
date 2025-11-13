@@ -14,21 +14,26 @@ export function Hero() {
             AI-Powered Trade Solutions
           </div> */}
 
+          {/* Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-            Connecting Canadian Market with Global Markets
+            Connect With Verified Global Buyers & Suppliers
           </h1>
 
+          {/* Subtext */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 text-pretty max-w-3xl mx-auto">
-            Making Partnerships that Prosper
+            ZenGrow helps you find trusted trade partners and simplifies shipping, paperwork, 
+            and payments — all in one place.
           </p>
-
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Find Buyers */}
             <Button size="lg" asChild className="text-base bg-primary">
               <Link href="/buyers">
                 I Want to Buy from Canada
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
+            {/* Find Suppliers */}
             <Button size="lg" variant="outline" asChild className="text-base bg-transparent">
               <Link href="/suppliers">
                 I Want to Export to Canada

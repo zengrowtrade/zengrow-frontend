@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "About ZenGrow Trade Ltd. | Verified Trade, Data & AI",
+  description:
+    "Learn about ZenGrow Trade Ltd., a Canadian trade-tech company connecting verified buyers and suppliers using transparency, data, and AI.",
+  alternates: {
+    canonical: "https://zengrowtrade.com/about",
+  },
+}
 import { Header } from "../../components/header"
 import { Footer } from "../../components/footer"
 import { Card } from "../../components//ui/card"
@@ -63,6 +71,38 @@ export default function AboutPage() {
                 <p className="text-muted-foreground">Transparent processes and verified partnerships</p>
               </Card>
             </div>
+            <Card className="p-8 md:p-12">
+              <h2 className="text-2xl font-bold mb-4">What We Do</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                ZenGrow Trade Ltd. connects verified buyers and suppliers and supports them through
+                the entire trade journey. We focus on trust, transparency, and efficiency so you
+                can close deals faster with less risk.
+              </p>
+
+              <ul className="space-y-3 text-muted-foreground text-lg">
+                <li>
+                  <span className="font-semibold text-foreground">Buyer–Supplier Matching:</span>{" "}
+                  We introduce credible buyers and suppliers so you get real opportunities, not random leads.
+                </li>
+                <li>
+                  <span className="font-semibold text-foreground">Company Verification:</span>{" "}
+                  We help reduce fraud by checking business legitimacy and verifying trade partners.
+                </li>
+                <li>
+                  <span className="font-semibold text-foreground">Import & Export Support:</span>{" "}
+                  Guidance on documentation, logistics, and basic compliance so deals move smoothly.
+                </li>
+                <li>
+                  <span className="font-semibold text-foreground">Canadian Market Entry:</span>{" "}
+                  For global suppliers, we help you access the Canadian market and connect with local buyers.
+                </li>
+                <li>
+                  <span className="font-semibold text-foreground">AI-Powered Insights:</span>{" "}
+                  We leverage data and AI tools to identify opportunities, spot risks, and support smarter trade decisions.
+                </li>
+              </ul>
+            </Card>
+
           </div>
         </div>
       </main>
