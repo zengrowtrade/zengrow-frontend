@@ -52,6 +52,11 @@ export function Footer() {
                   For Buyers
                 </Link>
               </li>
+              <li>
+                <Link href="/blog/top-10-products-canada-export-2025" className="text-muted-foreground hover:text-primary transition-colors">
+                  Top Canadian Exports 2025
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -59,12 +64,12 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link href="/terms-of-service " className="text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
                 </Link>
               </li>

@@ -6,6 +6,7 @@ export const metadata = {
     canonical: "https://zengrowtrade.com/about",
   },
 }
+import Link from "next/link"
 import { Header } from "../../components/header"
 import { Footer } from "../../components/footer"
 import { Card } from "../../components//ui/card"
@@ -55,6 +56,13 @@ export default function AboutPage() {
                 reach new markets and buyers access authentic Canadian products with confidence. Our Canadian roots
                 ground us in values of reliability, innovation, and ethical business practices.
               </p>
+              <p className="text-muted-foreground">
+                To understand where Canada is most competitive in global trade, read our
+                <Link href="/blog/top-10-products-canada-export-2025" className="underline ml-1">
+                  latest export analysis for 2025.
+                </Link>
+              </p>
+
             </Card>
 
             <div className="grid md:grid-cols-3 gap-6 mt-12">

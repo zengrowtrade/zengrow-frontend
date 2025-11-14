@@ -3,6 +3,8 @@ import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
+
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
@@ -38,6 +40,42 @@ export default function RootLayout({ children }) {
           `}
         </Script>
         {/* --- End GA4 --- */}
+        
+        {/* --- Schema Markup: Organization --- */}
+        <Script id="schema-organization" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "ZenGrow Trade Ltd.",
+              "url": "https://www.zengrowtrade.com",
+              "logo": "https://www.zengrowtrade.com/logo/box_Logo.png",
+              "sameAs": [
+                "https://www.linkedin.com/company/zengrowtrade/"
+              ]
+            }
+          `}
+        </Script>
+
+        {/* --- Schema Markup: LocalBusiness --- */}
+        <Script id="schema-localbusiness" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "ZenGrow Trade Ltd.",
+              "url": "https://www.zengrowtrade.com",
+              "telephone": "+1-204-869-7337",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Winnipeg",
+                "addressRegion": "MB",
+                "addressCountry": "CA"
+              }
+            }
+          `}
+        </Script>
+
 
         {children}
         <Analytics />

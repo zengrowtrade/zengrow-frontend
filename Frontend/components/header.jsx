@@ -42,6 +42,8 @@ export function Header() {
             <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
               Get Verify
             </Link>
+            <Link href="/blog" className="hover:text-primary">Blog</Link>
+
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
