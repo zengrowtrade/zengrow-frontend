@@ -11,7 +11,7 @@ export const metadata = {
     "Connecting Canadian suppliers with global buyers. Your trusted AI-powered trade partner for sourcing and exporting.",
   generator: "v0.app",
   alternates: {
-    canonical: "https://zengrowtrade.com/",
+    canonical: "https://www.zengrowtrade.com/",
   },
   icons: {
     icon: "/logo/box_Logo.png",
