@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google"
+import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -9,17 +10,38 @@ export const metadata = {
   description:
     "Connecting Canadian suppliers with global buyers. Your trusted AI-powered trade partner for sourcing and exporting.",
   generator: "v0.app",
+  alternates: {
+    canonical: "https://zengrowtrade.com/",
+  },
   icons: {
-    icon: '/logo/box_Logo.png',
+    icon: "/logo/box_Logo.png",
   },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${inter.className} font-sans antialiased`}>
+
+        {/* --- Google Analytics 4 --- */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0243S72PEX"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0243S72PEX');
+          `}
+        </Script>
+        {/* --- End GA4 --- */}
+
         {children}
         <Analytics />
+
       </body>
     </html>
   )
