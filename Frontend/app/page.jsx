@@ -13,6 +13,7 @@ import { FeaturedProducts } from "../components/featured-products"
 import { TrustIndicators } from "../components/trust-indicators"
 import { Footer } from "../components/footer"
 import Link from "next/link"
+import ChatbotContainer from "../components/ChatbotContainer";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
           <WhoWeAre />
           <FeaturedProducts />
           <TrustIndicators />
+          <ChatbotContainer />
           {/* Internal link block */}
           <section className="py-8">
             <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">

@@ -41,6 +41,23 @@ export default function BlogIndex() {
             </span>
           </Link>
 
+          {/* Blog Card */}
+          <Link
+            href="/blog/5-Mistakes-Exporters-Make"
+            className="group block bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-200"
+          >
+            <h2 className="text-xl font-semibold group-hover:text-primary transition-colors mb-2">
+               5 Mistakes Exporters Make When Entering the UK Market
+            </h2>
+            <p className="text-sm text-muted-foreground mb-4">
+              Most failures come from avoidable mistakes, not weak products or pricing.
+            </p>
+            <span className="text-primary font-medium group-hover:underline">
+              Read more →
+            </span>
+          </Link>
+
+
           {/* More cards later… */}
           <div className="opacity-40 border border-dashed rounded-xl p-6 flex items-center justify-center text-muted-foreground text-sm">
             More articles coming soon…
