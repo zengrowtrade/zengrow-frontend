@@ -1,10 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Linkedin } from "lucide-react";
 export function Footer() {
   return (
     <footer className="border-t bg-muted/30">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-5 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8  flex items-center justify-center overflow-hidden">
@@ -71,6 +72,22 @@ export function Footer() {
               <li>
                 <Link href="/terms-of-service " className="text-muted-foreground hover:text-primary transition-colors">
                   Terms of Service
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Social</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="https://www.linkedin.com/company/zengrow-trade-ltd/"
+                  target="_blank"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
                 </Link>
               </li>
             </ul>

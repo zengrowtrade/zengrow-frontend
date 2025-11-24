@@ -5,7 +5,7 @@ import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
 import { sendChatMessage } from "../config/api";
 
-export default function ChatbotWidget() {
+export default function ChatbotWidget({ onClose }) {
   const [messages, setMessages] = useState([
     {
       id: "welcome",
@@ -62,13 +62,20 @@ export default function ChatbotWidget() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 w-80 max-h-[70vh] bg-white shadow-xl rounded-xl flex flex-col border border-gray-200">
+    <div className="w-80 max-h-[70vh] bg-white shadow-xl rounded-xl flex flex-col border border-gray-200">
       {/* Header */}
       <div className="px-3 py-2 border-b border-gray-200 flex items-center justify-between bg-primary text-white rounded-t-xl">
         <div className="text-sm font-semibold">Zen</div>
-        {loading && (
-          <span className="text-[10px] opacity-80">Thinking...</span>
-        )}
+        <div className="flex items-center gap-2 text-[10px]">
+          {loading && <span className="opacity-80">Thinking...</span>}
+          <button
+            type="button"
+            onClick={onClose}
+            className="text-xs font-bold hover:opacity-80"
+          >
+            ×
+          </button>
+        </div>
       </div>
 
       {/* Messages */}

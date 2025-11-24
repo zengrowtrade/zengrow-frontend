@@ -2,7 +2,7 @@ import { Inter } from "next/font/google"
 import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import ChatbotWidget from "../components/ChatbotWidget";
+import ChatbotLauncher from "@/components/ChatbotLauncher";
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        <ChatbotWidget />
+        <ChatbotLauncher />
         {children}
         <Analytics />
 

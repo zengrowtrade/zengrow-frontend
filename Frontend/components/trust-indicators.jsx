@@ -43,19 +43,6 @@ export function TrustIndicators() {
           </Card>
         </div>
         <section className="py-20 bg-muted/20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Latest Insights</h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Stay updated with market trends, export opportunities, and Canadian trade insights.
-          </p>
-
-          <Link
-            href="/blog/top-10-products-canada-export-2025"
-            className="text-primary underline underline-offset-2 text-lg font-medium"
-          >
-            Top 10 Products Canada Can Export in 2025 →
-          </Link>
-        </div>
       </section>
 
       </div>
