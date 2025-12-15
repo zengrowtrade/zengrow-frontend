@@ -40,7 +40,7 @@ export function Header() {
               For Buyers
             </Link>
             <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
-              Get Verify
+              Contact Us
             </Link>
             <Link href="/blog" className="hover:text-primary">Blog</Link>
 

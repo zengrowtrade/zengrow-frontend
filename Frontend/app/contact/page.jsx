@@ -34,7 +34,7 @@ export default function ContactPage() {
               <h3 className="font-semibold mb-2">Email Us</h3>
               <p className="text-sm text-muted-foreground mb-4">Get a response within 24 hours</p>
               <Button variant="outline" size="sm" asChild>
-                <a href="mailto:info@zengrowtrade.com">deepanshukapoor@zengrowtrade.com</a>
+                <a href="mailto:info@zengrowtrade.com">deepanshu.kapoor@zengrowtrade.com</a>
               </Button>
             </Card>
 
